@@ -99,17 +99,53 @@ honors %>%
 
 # Trainings
 
-```{r TRAININGS}
+```{r}
+library(tibble)
+tribble(
+  ~ Title, ~ Date, ~ Institution, ~ Where,
+  
+"Data Analysis With Python Programing Language","14/08/2023-21/08/2023","Forest Research and Training Centre",
+"Kathmandu,Nepal",
 
-trainings %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
-  )
+"Improving forest carbon estimation and degradation monitoring in Nepal","23/07/2022-27/07/2022","USAID,NASA,ICIMOD",
+"Chitwan, Nepal" ,
+ 
+"Forest carbon stock measurement using Earth Observation data","10/10/2022-11/11/2022","USAID,NASA,ICIMOD","Kathmandu, Nepal",
 
+"Development of National Land Cover Monitoring System for Nepal","22/08/2022-26/08/2022","USAID,NASA,ICIMOD","Lalitpur, Nepal",
+  
+#"Dendrochronology and Its Applications","28/06/2022-01/07/2022","Forest Research and Training Centre","Kathmandu,Nepal",  
+
+"Training on Unbaiased Area Estimation and Uncertainty Estimation for Forest Degradation in Nepal","23/05/2022-27/05/22",
+"USAID,SilvaCarbon","Pokhara,Nepal",
+  
+#"Tomograph Handling Training","16/11/2021-28/11/2021","Forest Research and Training Centre","Kathmandu,Nepal",  
+
+"Data Analysis and Forest Mapping","7/03/2021-16/03/2021","Forest Research and Training Centre","Kathmandu,Nepal",
+  
+"Training on Mapping Forest Degradation", "25/11/2019-29/11/2019","SilvaCarbon,ICIMOD","Chitawan,Nepal",
+  
+"Introductory Training on LIDAR Data Processing", "18/07/2016–20/07/2016","USAID and US Forest Service-SilvaCarbon","Kathmandu, Nepal",
+
+#"Management Training for Conservation and Development","06/06/2016–11/07/2016","Central Forests Training and Extension Center","Kathmandu, Nepal",
+
+"Advance Training on Statistical Software (R-Package) Handling","08/02/2016–12/02/2016","Forest Research and Training Centre(Formerly Department of Forest Research and Survey)", "Kathmandu, Nepal", 
+
+#"Training Workshop on Dendrochronology","08/11/2015–09/11/2015","Forest Research and Training Centre(Formerly Department of Forest Research and Survey)", "Kathmandu, Nepal",
+
+"Statistical Software (R-Package) Handling Basic Training","01/11/2015–05/11/2015","Forest Research and Training Centre(Formerly Department of Forest Research and Survey)", "Kathmandu, Nepal",
+  
+#"Scientific Report Writing Training","21/06/2015–23/06/2015","Forest Research and Training Centre(Formerly Department of Forest Research and Survey)", "Kathmandu, Nepal",  
+  
+"Technical training on Deforestation and Forest Degradation Mapping and Monitoring using Multi-scale Geospatial methods in
+the context of REDD+ Initiatives","04/08/2014–08/08/2014","International Centre for Integrated Mountain Development (ICIMOD)","Lalitpur,Nepal",
+
+"Training for Trainer (ToT) on Forest Fire Management", "05/12/2010–09/12/2010", "Ministry of Forests and Soil conservation and U.S. Department of State and U.S. Forest Service.", "Hetauda, Nepal",
+
+"Statistical Package for Social Science (SPSS)", "28/07/2009–30/07/2009", "Memorial Centre of Excellence (MemCoE)", "Institute of Forestry,Hetauda (Nepal)"
+ 
+) %>%
+  detailed_entries(Institution, Date,Title , Where)
 ```
 
 # Publications
@@ -127,10 +163,10 @@ bibliography_entries("My_Publication.bib")
 # Conference/Workshops
 
 - Participation on ART/TREES Registration Document (TRD) Write-shop held in Thailand, 01-05 August 2023.
-- Participation on South-South Exchange on Monitoring and Estimating Emissions from Forest Degradation from 3 to 5 May 2023 at FAO           Headquarters, Rome, Italy (Presenter)
-- South-South Knowledge Exchange on Measurement, Monitoring, Reporting and Verification systems held in Mozambique,12-17 December 2022(Presenter)
+- Participation on South-South Exchange on Monitoring and Estimating Emissions from Forest Degradation from 3 to 5 May 2023 at FAO Headquarters, Rome, Italy (Presenter).
+- South-South Knowledge Exchange on Measurement, Monitoring, Reporting and Verification systems held in Mozambique,12-17 December 2022(Presenter).
 - Participation on Forth GFOI Regional Workshop on Biomass Mapping held in Bogor, Indonesia, 05-09 October 2015.
-- Participation on "How is Our Work on Participatory Forest Monitoring informing National Forest Monitoring Systems?" Regional
+- Participation on "How is Our Work on Participatory Forest Monitoring informing National Forest Monitoring Systems?" Regional.
   Knowledge Exchange Event on Participatory Forest Monitoring held inLam Dong, Vietnam,18-20 November 2014( Participant).
 - Participation on Second GFOI Forest Monitoring Workshop - " SE Asia Technical Initiative" held in Kathmandu, Nepal, 23-28 June, 2014(      Participant)
 
@@ -157,13 +193,13 @@ tribble(
   "Head of Department;Forest Inventory and Remote Sensing, 
   Faculty of Forest Sciences and Forest Ecology,
   Georg-August-University, Goettingen",
-  "CKleinn@gwdg.de; +49 [0]551 39-33473",
+  "CKleinn@gwdg.de; +49[0]55139-33473",
   'Deepak Kumar Kharal, Ph.D',
   "Secretary; Ministry of Forests and Environment,Nepal",
-  "dkkharal@gmail.com;+ 977 9841499987",
+  "dkkharal@gmail.com; +977-9841499987",
   'Rajendra KC,Ph.D',
    "Joint-Scretary; Ministry of Forests and Environment,Nepal",
-  "rkc.gen@gmail.com ; +977 9851149420"
+  "rkc.gen@gmail.com ; +977-9851149420"
   
 ) %>%
   detailed_entries(where = Contact,
