@@ -124,6 +124,8 @@ tribble(
 "Data Analysis and Forest Mapping","7/03/2021-16/03/2021","Forest Research and Training Centre","Kathmandu,Nepal",
   
 "Training on Mapping Forest Degradation", "25/11/2019-29/11/2019","SilvaCarbon,ICIMOD","Chitawan,Nepal",
+
+"Implementing the Global Land Analysis and Discovery(GLAD) System for forest cover change mapping","24/04/2017-28/04/2017","USAID,SilvaCarbon Global Land Analysis & Discovery","Kathmandu, Nepal",
   
 "Introductory Training on LIDAR Data Processing", "18/07/2016–20/07/2016","USAID and US Forest Service-SilvaCarbon","Kathmandu, Nepal",
 
@@ -193,7 +195,7 @@ tribble(
   "Head of Department;Forest Inventory and Remote Sensing, 
   Faculty of Forest Sciences and Forest Ecology,
   Georg-August-University, Goettingen",
-  "CKleinn@gwdg.de; +49[0]55139-33473",
+  "CKleinn@gwdg.de; +49[0] 39 23473",
   'Deepak Kumar Kharal, Ph.D',
   "Secretary; Ministry of Forests and Environment,Nepal",
   "dkkharal@gmail.com; +977-9841499987",

@@ -1,17 +1,20 @@
 work <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
+    
+    "Research/Remote Sensing Officer", "Forest Research and Training Centre", "July", 2013, "Present", NA, "Babarmahal,Kathmadu", "Design and Plan the research activities of the Department",
     "Research/Remote Sensing Officer", "Forest Research and Training Centre", "July", 2013, "Present", NA, "Babarmahal,Kathmadu", 
     "Develop research protocols and conduct forest research",
     "Research/Remote Sensing Officer", "Forest Research and Training Centre", "July", 2013, "Present", NA, "Babarmahal,Kathmadu", 
-    "Conduct forest inventory and data analysis",
+    "Work as Crew Leader of forest inventory, validate and analyse the inventory data ",
     "Research/Remote Sensing Officer", "Forest Research and Training Centre", "July", 2013, "Present", NA, "Babarmahal,Kathmadu", 
     "Make and update National Land Cover Monitoring System of Nepal",
     "Research/Remote Sensing Officer", "Forest Research and Training Centre", "July", 2013, "Present", NA, "Babarmahal,Kathmadu", 
-    "prepapre Activity data (Forest Degradation and Deforestation) for REDD plus program using Remote Sensing and GIS techniques",
+    "Prepapre Activity data (Forest Degradation and Deforestation) and analyse the Emission data for REDD plus program",
     "Research/Remote Sensing Officer", "Forest Research and Training Centre", "July", 2013, "Present", NA, "Babarmahal,Kathmadu", 
-    "Facilitate on training program for the Forestry Professional ",
+    "Facilitate on training program for the Forestry Professionals ",
     "Research/Remote Sensing Officer", "Forest Research and Training Centre", "July", 2013, "Present", NA, "Babarmahal,Kathmadu", 
     "Supervise the Bachelors and Masters students of Forestry for their project work ",
+ 
     
     "Ranger", "District Forest Officer (Department of Forest) ", "November", 2010, "July", 2013, "Makawanpur,Nepal",
     "Conservation and Management of Forest Resources",
@@ -26,11 +29,9 @@ work <- tribble(
     "Support District Forest Officer for planning and monitoring of development activities conducted by Range post staffs",
     
     " Consultant Ranger", "Federation of Community Forestry Users, Nepal(FECOFUN) ", "January", 2002, "July", 2005, "Makawanpur,Nepal",
-    "Assist on Forest user group formation",
+    "Assist on Forest user group formation, and Identify and empower women and disadvantage groups in Community Forest User Groups",
     " Consultant Ranger", "Federation of Community Forestry Users, Nepal(FECOFUN) ", "January", 2002, "July", 2005, "Makawanpur,Nepal",
     "Assist on preparation and revision of Operation Plan of Community Forest",
-    " Consultant Ranger", "Federation of Community Forestry Users, Nepal(FECOFUN) ", "January", 2002, "July", 2005, "Makawanpur,Nepal",
-    "Identify and empower women and disadvantage groups",
     " Consultant Ranger", "Federation of Community Forestry Users, Nepal(FECOFUN) ", "January", 2002, "July", 2005, "Makawanpur,Nepal",
     "Facilitation on training and workshops related to Community Forestry"
     
