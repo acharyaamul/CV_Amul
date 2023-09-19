@@ -1,0 +1,175 @@
+---
+name: Amul Kumar
+surname: Acharya
+position: "Research/Remote Sensing Officer"
+address: "Kathmandu,Nepal"
+profilepic: "./img/me.jpg"
+email: "acharya.amulkumar@gmail.com"
+github: acharyaamul
+linkedin: Amulkumar Acharya
+twitter: pricelessamul
+orcid: 0000-0002-3638-6692
+phone: +977 9851184438
+date: "`r format(Sys.time(), '%B %Y')`"
+fontawesome: yes
+headcolor: 990000
+aboutme: "I have been working as Research/Remote Sensing Officer for ten years at Forest Reserch and Training Centre, Nepal. I have a deep driven passion for application of Remote sensing and GIS techniques in Forestry sector.I have prepared this CV using Rmarkdown."
+docname: CV
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+require(xfun)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data structure for tribbles
+             ,'magrittr'  # The Pipe %>%
+             ,'here'      # Relative File Paths
+             ,'readr'     # Data Loading
+             ,'glue'      # String Manipulation
+            )
+
+xfun::pkg_attach2(packages, message = FALSE)
+
+source(file = here("r","data.r"))
+
+```
+
+# Employment
+
+```{r EMPLOYMENT}
+
+work %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    where = where
+  )
+
+```
+
+# Education
+
+```{r EDUCATION}
+
+edu %>%
+  detailed_entries(
+    with = inst,
+    what = degree,
+    why = detail,
+    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    where = where
+  )
+
+```
+
+# Skills
+
+```{r SKILLS}
+
+skills %>%
+  detailed_entries(
+    with = area,
+    what = skills
+  )
+
+```
+
+# SCHOLARSHIPS/AWARDS
+
+```{r AWARDS}
+
+honors %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
+```
+
+
+# Trainings
+
+```{r TRAININGS}
+
+trainings %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
+```
+
+# Publications
+
+```{r}
+bibliography_entries("My_Publication.bib")
+
+```
+
+
+# Project
+- Assessment of Sustainable Forest Management of Community Forest ( A case study of a Sundar Community Forest of Makawanpur District)         submitted in partial fulfillment for the award of the degree of Bachelor of Science in Forestry to Tribhuvan University in 2009.
+- 3D landscape metrics along the urban-rural gradient in the Bengaluru, India submitted in George August University in 2019 (Master          Thesis).
+
+# Conference/Workshops
+
+- Participation on ART/TREES Registration Document (TRD) Write-shop held in Thailand, 01-05 August 2023.
+- Participation on South-South Exchange on Monitoring and Estimating Emissions from Forest Degradation from 3 to 5 May 2023 at FAO           Headquarters, Rome, Italy (Presenter)
+- South-South Knowledge Exchange on Measurement, Monitoring, Reporting and Verification systems held in Mozambique,12-17 December 2022(Presenter)
+- Participation on Forth GFOI Regional Workshop on Biomass Mapping held in Bogor, Indonesia, 05-09 October 2015.
+- Participation on "How is Our Work on Participatory Forest Monitoring informing National Forest Monitoring Systems?" Regional
+  Knowledge Exchange Event on Participatory Forest Monitoring held inLam Dong, Vietnam,18-20 November 2014( Participant).
+- Participation on Second GFOI Forest Monitoring Workshop - " SE Asia Technical Initiative" held in Kathmandu, Nepal, 23-28 June, 2014(      Participant)
+
+# Networks and Memberships
+
+- Life Member of Nepal Foresters' Association, Nepal
+- Life Member of Makawanpur Forester's Society
+
+# Languages
+
+- Nepali- Mother Tongue 
+- English- Proficient user
+- Hindi- Proficient user
+- Deutsch- Independent user
+
+# References
+
+```{r}
+tribble(
+  ~ Name,
+  ~ Title,
+  ~ Contact,
+  'Prof. Dr. Christoph Kleinn',
+  "Head of Department;Forest Inventory and Remote Sensing, 
+  Faculty of Forest Sciences and Forest Ecology,
+  Georg-August-University, Goettingen",
+  "CKleinn@gwdg.de; +49 [0]551 39-33473",
+  'Deepak Kumar Kharal, Ph.D',
+  "Secretary; Ministry of Forests and Environment,Nepal",
+  "dkkharal@gmail.com;+ 977 9841499987",
+  'Rajendra KC,Ph.D',
+   "Joint-Scretary; Ministry of Forests and Environment,Nepal",
+  "rkc.gen@gmail.com ; +977 9851149420"
+  
+) %>%
+  detailed_entries(where = Contact,
+                   with = Name,
+                   what = Title) 
+```
+
+
+
