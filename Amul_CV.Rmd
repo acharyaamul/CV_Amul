@@ -3,7 +3,7 @@ name: Amul Kumar
 surname: Acharya
 position: "Research/Remote Sensing Officer"
 address: "Kathmandu,Nepal"
-profilepic: "./img/me.jpg"
+profilepic: "./img/me2.png"
 email: "acharya.amulkumar@gmail.com"
 github: acharyaamul
 linkedin: Amulkumar Acharya
@@ -13,7 +13,7 @@ phone: +977 9851184438
 date: "`r format(Sys.time(), '%B %Y')`"
 fontawesome: yes
 headcolor: 990000
-aboutme: "I have been working as Research/Remote Sensing Officer for ten years at Forest Reserch and Training Centre, Nepal. I have a deep driven passion for application of Remote sensing and GIS techniques in Forestry sector.I have prepared this CV using Rmarkdown."
+aboutme: "I have been working as Research/Remote Sensing Officer for ten years at Forest Reserch and Training Centre, Nepal. I have a deep driven passion for application of Remote sensing and GIS techniques in Forestry sector."
 docname: CV
 output: vitae::awesomecv
 ---
