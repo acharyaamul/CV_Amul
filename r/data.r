@@ -47,7 +47,7 @@ skills <- tribble(
     ~area, ~skills,
     "Programming Languages", "R, Python, JavaScript",
     "Markup Languages", "RMarkdown, Markdown",
-    "Text Editors", "RStudio,Jupyter Notebook,Google Colab,Visual Studio Code",
+    "Text Editors", "RStudio,Jupyter Lab,Jupyter Notebook,Google Colab,Visual Studio Code",
     "Remote Sensing/GIS","QGIS, Google Earth Engine, SNAP, CloudCompare, Fusion, LAStools, ArcGIS, ArcGIS Pro, ERDAS,eCognition, Geomatica",
     "Others","MS Office( Excel, Outlook, PowerBI, PowerPoint,Word),SPSS,Zotero etc."
 )
