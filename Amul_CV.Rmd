@@ -104,6 +104,9 @@ library(tibble)
 tribble(
   ~ Title, ~ Date, ~ Institution, ~ Where,
   
+"Statistical Analysis and Forest Mapping using Python","26/09/2023-5/10/2023","Forest Research and Training Centre",
+"Kathmandu,Nepal", 
+  
 "Data Analysis With Python Programing Language","14/08/2023-21/08/2023","Forest Research and Training Centre",
 "Kathmandu,Nepal",
 
@@ -121,7 +124,7 @@ tribble(
   
 #"Tomograph Handling Training","16/11/2021-28/11/2021","Forest Research and Training Centre","Kathmandu,Nepal",  
 
-"Data Analysis and Forest Mapping","7/03/2021-16/03/2021","Forest Research and Training Centre","Kathmandu,Nepal",
+#"Data Analysis and Forest Mapping","7/03/2021-16/03/2021","Forest Research and Training Centre","Kathmandu,Nepal",
   
 "Training on Mapping Forest Degradation", "25/11/2019-29/11/2019","SilvaCarbon,ICIMOD","Chitawan,Nepal",
 
