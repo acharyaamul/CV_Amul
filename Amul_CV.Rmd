@@ -145,7 +145,7 @@ tribble(
 "Technical training on Deforestation and Forest Degradation Mapping and Monitoring using Multi-scale Geospatial methods in
 the context of REDD+ Initiatives","04/08/2014–08/08/2014","International Centre for Integrated Mountain Development (ICIMOD)","Lalitpur,Nepal",
 
-"Training for Trainer (ToT) on Forest Fire Management", "05/12/2010–09/12/2010", "Ministry of Forests and Soil conservation and U.S. Department of State and U.S. Forest Service.", "Hetauda, Nepal",
+#"Training for Trainer (ToT) on Forest Fire Management", "05/12/2010–09/12/2010", "Ministry of Forests and Soil conservation and U.S. Department of State and U.S. Forest Service.", "Hetauda, Nepal",
 
 "Statistical Package for Social Science (SPSS)", "28/07/2009–30/07/2009", "Memorial Centre of Excellence (MemCoE)", "Institute of Forestry,Hetauda (Nepal)"
  
@@ -184,7 +184,6 @@ bibliography_entries("My_Publication.bib")
 
 - Nepali- Mother Tongue 
 - English- Proficient user
-- Hindi- Proficient user
 - Deutsch- Independent user
 
 # References
