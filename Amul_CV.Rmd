@@ -6,7 +6,7 @@ address: "Kathmandu,Nepal"
 profilepic: "./img/me2.png"
 email: "acharya.amulkumar@gmail.com"
 github: acharyaamul
-linkedin: Amulkumar Acharya
+linkedin: Amul Kumar Acharya
 twitter: pricelessamul
 orcid: 0000-0002-3638-6692
 phone: +977 9851184438
