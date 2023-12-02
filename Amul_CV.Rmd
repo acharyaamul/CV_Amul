@@ -167,6 +167,7 @@ bibliography_entries("My_Publication.bib")
 
 # Conference/Workshops
 
+- Participation as resource Person on Training workshop "Earth observation for improving forest carbon estimation and degradation monitoring in Bangladesh",29 April-3 May 2024.
 - Participation on ART/TREES Registration Document (TRD) Write-shop held in Thailand, 01-05 August 2023.
 - Participation on South-South Exchange on Monitoring and Estimating Emissions from Forest Degradation from 3 to 5 May 2023 at FAO Headquarters, Rome, Italy (Presenter).
 - South-South Knowledge Exchange on Measurement, Monitoring, Reporting and Verification systems held in Mozambique,12-17 December 2022(Presenter).
@@ -199,10 +200,10 @@ tribble(
   Georg-August-University, Goettingen",
   "CKleinn@gwdg.de; +49[0] 39 23473",
   'Deepak Kumar Kharal, Ph.D',
-  "Secretary; Ministry of Forests and Environment,Nepal",
+  "Secretary; Ministry of Agriculture and Livestock Development,Nepal",
   "dkkharal@gmail.com; +977-9841499987",
   'Rajendra KC,Ph.D',
-   "Joint-Scretary; Ministry of Forests and Environment,Nepal",
+   "Director General; Forest Research and Training Centre,Babarmahal, Kathmandu",
   "rkc.gen@gmail.com ; +977-9851149420"
   
 ) %>%
