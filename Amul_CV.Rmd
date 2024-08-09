@@ -203,7 +203,7 @@ tribble(
   "Secretary; Ministry of Agriculture and Livestock Development,Nepal",
   "dkkharal@gmail.com; +977-9841499987",
   'Rajendra KC,Ph.D',
-   "Director General; Forest Research and Training Centre,Babarmahal, Kathmandu",
+   "Director General; Forest Research and Training Centre,Babarmahal,Kathmandu",
   "rkc.gen@gmail.com ; +977-9851149420"
   
 ) %>%
