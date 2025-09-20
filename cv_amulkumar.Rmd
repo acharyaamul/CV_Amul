@@ -1,0 +1,171 @@
+---
+name: Amul Kumar
+surname: Acharya
+position: "Research/Remote Sensing Officer (1983-04-23) "
+address: "Kathmandu,Nepal"
+profilepic: "./img/amul.png"
+email: "acharya.amulkumar@gmail.com"
+github: acharyaamul
+linkedin: AmulKumarAcharya
+twitter: pricelessamul
+orcid: 0000-0002-3638-6692
+phone: +977 9851184438
+date: "`r format(Sys.time(), '%B %Y')`"
+fontawesome: yes
+headcolor: 990000
+aboutme: "With over a decade of experience as a Remote Sensing Officer at the Forest Research and Training Centre in Nepal, I specialize in using Remote Sensing and GIS for forestry applications. I seek to further my academic and professional growth by exploring forest structure dynamics through Remote Sensing and GIS technology."
+docname: CV
+output: vitae::awesomecv
+
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+require(xfun)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data structure for tribbles
+             ,'magrittr'  # The Pipe %>%
+             ,'here'      # Relative File Paths
+             ,'readr'     # Data Loading
+             ,'glue'      # String Manipulation
+            )
+
+xfun::pkg_attach2(packages, message = FALSE)
+
+source(file = here("r","data.r"))
+
+```
+
+# Employment
+
+```{r EMPLOYMENT}
+work %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    where = where
+  )
+```
+  
+# Education and Scholarships
+
+```{r EDUCATION}
+edu %>%
+  detailed_entries(
+    with = inst,
+    what = degree,
+    why = detail,
+    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    where = where
+  )
+```
+
+# Skills
+
+```{r SKILLS}
+skills %>%
+  detailed_entries(
+    with = area,
+    what = skills
+  )
+
+```
+
+# SCHOLARSHIPS/AWARDS
+
+```{r AWARDS}
+
+honors %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
+```
+
+# Trainings
+```{r}
+library(tibble)
+tribble(
+  ~ Title, ~ Date, ~ Institution, ~ Where,
+  
+"Carbon Asset Registries Training","Jan/2025 - March/2025" ,"World Bank's Partnership for Market Implementation Facility","On-line Medium",
+"Programming Language (Advanced Machine Learning with Python)","21/10/2024-29/10/2024","Forest Research and Training Centre",
+"Kathmandu,Nepal", 
+"Drone Handling Training for Carbon Accounting","25/09/2024-27/09/2024","REDD Implementation Centre",
+"Dhulikhel, Nepal",
+"Advanced Training on National Forest Inventory and Carbon Accounting Data Analysis with R(40 Hrs)","20/08/2024-25/08/2024","FAO,Un-REDD Programme","Dhulikhel, Nepal",
+"Earth Observations for Forest Carbon Stocks Monitoring in Nepal(TLS data Handling)","22/07/2024-26/07/2024","USAID,SilvaCarbon,ICIMOD","Pokhara, Nepal",
+"Statistical Methods for Developing Allometric Equations in Forestry (35Hrs)","29/06/2024-03/07/2024","Forest Research and Training Centre","Dhulikhel, Nepal",  
+"Statistical Analysis and Forest Mapping using Python","26/09/2023-5/10/2023","Forest Research and Training Centre","Kathmandu,Nepal", 
+  "Data Analysis With Python Programing Language","14/08/2023-21/08/2023","Forest Research and Training Centre",
+"Kathmandu,Nepal",
+"Improving forest carbon estimation and degradation monitoring in Nepal (TLS data Handling)","23/07/2022-27/07/2022","USAID,US Forest Service,NASA,ICIMOD",
+"Chitwan, Nepal" ,
+ "Forest carbon stock measurement using Earth Observation data","10/10/2022-11/11/2022","USAID,NASA,ICIMOD","Kathmandu, Nepal",
+"Development of National Land Cover Monitoring System for Nepal","22/08/2022-26/08/2022","USAID,NASA,ICIMOD","Lalitpur, Nepal",
+"Dendrochronology and Its Applications","28/06/2022-01/07/2022","Forest Research and TrainingCentre","Kathmandu,Nepal",  
+"Training on Unbaiased Area Estimation and Uncertainty Estimation for Forest Degradation in Nepal","23/05/2022-27/05/2022", "USAID,SilvaCarbon","Pokhara,Nepal",
+"Tomograph Handling Training","16/11/2021-28/11/2021","Forest Research and Training Centre","Kathmandu,Nepal",  
+#"Data Analysis and Forest Mapping","7/03/2021-16/03/2021","Forest Research and Training Centre","Kathmandu,Nepal",
+"Training on Mapping Forest Degradation", "25/11/2019-29/11/2019","SilvaCarbon,ICIMOD","Chitawan,Nepal",
+"Implementing the Global Land Analysis and Discovery(GLAD) System for forest cover change mapping","24/04/2017-28/04/2017","USAID,SilvaCarbon Global Land Analysis & Discovery","Kathmandu, Nepal",
+  "Introductory Training on LIDAR Data Processing", "18/07/2016–20/07/2016","USAID and US Forest Service-SilvaCarbon","Kathmandu, Nepal",
+#"Management Training for Conservation and Development","06/06/2016–11/07/2016","Central Forests Training and Extension Center","Kathmandu, Nepal",
+
+"Advance Training on Statistical Software (R-Package) Handling","08/02/2016–12/02/2016","Forest Research and Training Centre(Formerly Department of Forest Research and Survey)", "Kathmandu, Nepal", 
+
+#"Training Workshop on Dendrochronology","08/11/2015–09/11/2015","Forest Research and Training Centre(Formerly Department of Forest Research and Survey)", "Kathmandu, Nepal",
+
+"Statistical Software (R-Package) Handling Basic Training","01/11/2015–05/11/2015","Forest Research and Training Centre(Formerly Department of Forest Research and Survey)", "Kathmandu, Nepal",
+  
+"Scientific Report Writing Training","21/06/2015–23/06/2015","Forest Research and Training Centre(Formerly Department of Forest Research and Survey)", "Kathmandu, Nepal",  
+  
+"Technical training on Deforestation and Forest Degradation Mapping and Monitoring using Multi-scale Geospatial methods in the context of REDD+ Initiatives","04/08/2014–08/08/2014","International Centre for Integrated Mountain Development (ICIMOD)","Lalitpur,Nepal",
+
+#"Training for Trainer (ToT) on Forest Fire Management", "05/12/2010–09/12/2010", "Ministry of Forests and Soil conservation and U.S. Department of State and U.S. Forest Service.", "Hetauda, Nepal",
+
+#"Statistical Package for Social Science (SPSS)", "28/07/2009–30/07/2009", "Memorial Centre of Excellence (MemCoE)", "Institute of Forestry,Hetauda (Nepal)"
+ 
+) %>%
+  detailed_entries(Institution, Date,Title , Where)
+```
+
+# Publications
+
+```{r}
+bibliography_entries("My_Publication.bib")
+
+```
+
+# References
+
+```{r}
+tribble(
+  ~ Name,
+  ~ Title,
+  ~ Contact,
+  'Prof. Dr. Christoph Kleinn',
+  "Head of Department;Forest Inventory and Remote Sensing, 
+  Faculty of Forest Sciences and Forest Ecology,
+  Georg-August-University, Goettingen",
+  "CKleinn@gwdg.de; +49 551 39-23473",
+    'Rajendra KC,Ph.D',
+   "Director General; Forest Research and Training Centre,Babarmahal,Kathmandu",
+  "rkc.gen@gmail.com ; +977-9851149420",
+) %>%
+  detailed_entries(where = Contact,
+                   with = Name,
+                   what = Title) 
+
+```
